@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapid Ads</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 25px 10px;
+        }
+
+        .logo {
+            font-size: 48px;
+        }
+
+        h1 {
+            margin: 10px 0 5px;
+            font-size: 30px;
+        }
+
+        .subtitle {
+            color: #6b7280;
+            margin: 0;
+        }
+
+        .balance {
+            background: white;
+            border-radius: 18px;
+            padding: 25px;
+            text-align: center;
+            margin: 15px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .balance-title {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .amount {
+            font-size: 38px;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        .watch {
+            width: 100%;
+            border: none;
+            border-radius: 14px;
+            padding: 16px;
+            background: #1689f5;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .watch:active {
+            transform: scale(0.98);
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+        }
+
+        .card-icon {
+            font-size: 28px;
+        }
+
+        .card-title {
+            margin-top: 8px;
+            font-weight: bold;
+        }
+
+        .card-text {
+            color: #6b7280;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        .status {
+            text-align: center;
+            margin-top: 18px;
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #9ca3af;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <div class="logo">🚀</div>
+        <h1>Rapid Ads</h1>
+        <p class="subtitle">Earn by watching advertisements</p>
+    </div>
+
+    <div class="balance">
+        <div class="balance-title">AVAILABLE BALANCE</div>
+        <div class="amount">$0.00</div>
+    </div>
+
+    <button class="watch" onclick="watchAds()">
+        🎬 Watch Ads
+    </button>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="card-icon">📊</div>
+            <div class="card-title">Account</div>
+            <div class="card-text">View your earnings</div>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">💰</div>
+            <div class="card-title">Wallet</div>
+            <div class="card-text">Manage withdrawals</div>
+        </div>
+
+    </div>
+
+    <div class="status" id="status">
+        Welcome to Rapid Ads!
+    </div>
+
+    <div class="footer">
+        Rapid Ads © 2026
+    </div>
+
+</div>
+
+<script>
+function watchAds() {
+    document.getElementById("status").textContent =
+        "Ad system will be connected soon.";
+}
+</script>
+
+</body>
+  </html>
